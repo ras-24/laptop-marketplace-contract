@@ -1,0 +1,124 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_laptopName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_laptopPrice",
+						"type": "uint256"
+					}
+				],
+				"name": "addLaptop",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "allLaptops",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "laptopName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "laptopPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "laptopOwner",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "buyLaptop",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "laptopId",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/LaptopMarketplace.sol": "LaptopMarketplace"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/LaptopMarketplace.sol": {
+			"keccak256": "0xee5bcbbc7169b62331910a0ea85420e8c842d25e86ddd2d1e6877001ac1d8d4b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2e09ade2e02664469e2268c8346f74e1cbfb08d8129bb1dce24d59eb608f8f17",
+				"dweb:/ipfs/QmRBJ5DoR18gMCASgFEhuHaptC29dKDC3s6N3F6WFdffMi"
+			]
+		}
+	},
+	"version": 1
+}
