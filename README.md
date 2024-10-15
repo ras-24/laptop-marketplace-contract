@@ -74,7 +74,7 @@ Laptop Marketplace Smart Contract
    ```
    0: uint256: id 1
    1: string: itemName Apple
-   2: uint256: itemPrice 5000000000000000000
+   2: uint256: itemPrice 1000000000000000000
    3: address: itemOwner 0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db
    ```
 
@@ -91,7 +91,7 @@ Laptop Marketplace Smart Contract
    click **balances**.
 
    ```
-   0: uint256: 5000000000000000000
+   0: uint256: 1000000000000000000
    ```
 
 4. **checkBalance**
@@ -99,7 +99,7 @@ Laptop Marketplace Smart Contract
    click **checkBalance**.
 
    ```
-   0: uint256: 5000000000000000000
+   0: uint256: 1000000000000000000
    ```   
 
 4. **withdrawBalance**
