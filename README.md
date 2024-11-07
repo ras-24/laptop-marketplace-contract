@@ -1,28 +1,111 @@
-REMIX DEFAULT WORKSPACE
+# laptop-marketplace-contract
+Laptop Marketplace Smart Contract
 
-Remix default workspace is present when:
-i. Remix loads for the very first time 
-ii. A new workspace is created with 'Default' template
-iii. There are no files existing in the File Explorer
+## Features
+1. **Add Item** -> Add item to storage.
+2. **Buy Item** -> Buy one item.
+3. **Withdraw Balance** -> Withdraw to Account Balance.
+4. **Balances** -> Show balance based on Account Address.
+5. **Check Balance** -> Show current Account Address balance.
+6. **Item Count** -> Show total number of items.
+7. **Items** -> Show item based on item ID.
 
-This workspace contains 3 directories:
+### Prerequisites
+1. This project runs on [Remix IDE](https://remix.ethereum.org).
 
-1. 'contracts': Holds three contracts with increasing levels of complexity.
-2. 'scripts': Contains four typescript files to deploy a contract. It is explained below.
-3. 'tests': Contains one Solidity test file for 'Ballot' contract & one JS test file for 'Storage' contract.
+### Installation
+1. Open [Remix IDE](https://remix.ethereum.org).
+2. On the Remix left side menu, click **Git** then click **CLONE**.
+3. Paste URL below on **url** in **CLONE FROM URL** section.
+   ```sh
+   https://github.com/ras-24/laptop-marketplace-contract.git
+   ```
+4. Type ```main``` on ***branch*** in **CLONE FROM URL** section.
+5. Click **clone**.
 
-SCRIPTS
+### Deploy Example
+1. **addItem**
 
-The 'scripts' folder has four typescript files which help to deploy the 'Storage' contract using 'web3.js' and 'ethers.js' libraries.
+   Choose **Account** for the seller on **ACCOUNT** section.
 
-For the deployment of any other contract, just update the contract's name from 'Storage' to the desired contract and provide constructor arguments accordingly 
-in the file `deploy_with_ethers.ts` or  `deploy_with_web3.ts`
+   _itemName: MacBook Pro
 
-In the 'tests' folder there is a script containing Mocha-Chai unit tests for 'Storage' contract.
+   _itemPrice: 1000000000000000000
 
-To run a script, right click on file name in the file explorer and click 'Run'. Remember, Solidity file must already be compiled.
-Output from script will appear in remix terminal.
+   click **transact**.
 
-Please note, require/import is supported in a limited manner for Remix supported modules.
-For now, modules supported by Remix are ethers, web3, swarmgw, chai, multihashes, remix and hardhat only for hardhat.ethers object/plugin.
-For unsupported modules, an error like this will be thrown: '<module_name> module require is not supported by Remix IDE' will be shown.
+   Note : Laptop Price in **Wei** or 1 **Ether** ($2621.17) (2621.17 $ Per Ether)
+
+   We use [Ethereum Unit Converter](https://eth-converter.com/) to Convert the Price.
+2. **itemCount**
+
+   click **itemCount**.
+
+   To show the amount of earlier added item.
+
+   ```
+   0: uint256: 1
+   ```
+
+4. **items**
+   
+   Type **1** for show the first item ID.
+
+   click **items**.
+
+   ```
+   0: uint256: id 1
+   1: string: itemName MacBook Pro
+   2: uint256: itemPrice 1000000000000000000
+   3: address: itemOwner 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
+   ```
+   
+4. **buyItem**
+   
+   Choose different **account address** to buy the laptop.
+
+   Enter the laptop price on the **VALUE** field : 1000000000000000000 (**Wei**)
+
+   Enter the item ID on **buyItem** : **1**
+
+   click **buyItem**.
+
+   After buy we can check the item ownership by type item ID is **1** and click **items**
+   ```
+   0: uint256: id 1
+   1: string: itemName Apple
+   2: uint256: itemPrice 1000000000000000000
+   3: address: itemOwner 0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db
+   ```
+
+   We can see the book ownership has changed from
+
+   **0x5B38Da6a701c568545dCfcB03FcB875f56beddC4** to **0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db**
+
+4. **balances**
+   
+   Copy the seller **Account Address**.
+
+   Paste on **address** field in the **balance** section.
+
+   click **balances**.
+
+   ```
+   0: uint256: 1000000000000000000
+   ```
+
+4. **checkBalance**
+
+   click **checkBalance**.
+
+   ```
+   0: uint256: 1000000000000000000
+   ```   
+
+4. **withdrawBalance**
+
+   Choose seller **Account** on **ACCOUNT** section.
+
+   click **withdrawBalance**.
+
+   The balance in the Marketplace will be transferred to your **seller account balance**.
