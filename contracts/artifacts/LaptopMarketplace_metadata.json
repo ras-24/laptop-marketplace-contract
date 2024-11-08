@@ -336,7 +336,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/LaptopMarketplaceERC20.sol": "LaptopMarketplace"
+			"contracts/LaptopMarketplaceERC20Test2.sol": "LaptopMarketplace"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -374,12 +374,12 @@
 				"dweb:/ipfs/Qmax9WHBnVsZP46ZxEMNRQpLQnrdE4dK8LehML1Py8FowF"
 			]
 		},
-		"contracts/LaptopMarketplaceERC20.sol": {
-			"keccak256": "0xcf55600a9d4a71e15adaa89da40067341f289c57bd80a5804fb40a00a8b7f59f",
+		"contracts/LaptopMarketplaceERC20Test2.sol": {
+			"keccak256": "0x6e053974d1ae64d8b4f23c9d9a1b2ff22063c08265a30c71c950964c53a33825",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4fb85b9edce857cb5136eb66fc0538289b635c854971eacc905a2b00a0c7a6ae",
-				"dweb:/ipfs/QmUwywgNsYhQnY6EoipnrJHCAJgidRsqCeH8TqqwH65wkN"
+				"bzz-raw://0bd0c7f67d616e5ab511bf9106af5341d0f48538ce4db12e715b6d2a1686700a",
+				"dweb:/ipfs/QmartRXWRuw8ChEd8iAbaosWyt6thQRkg7qArXJiTE1xMa"
 			]
 		}
 	},
