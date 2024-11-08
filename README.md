@@ -109,3 +109,9 @@ Laptop Marketplace Smart Contract
    click **withdrawBalance**.
 
    The balance in the Marketplace will be transferred to your **seller account balance**.
+
+## Payment with Laptop Token (LPT) ERC-20
+   Upgraded [smart contract](https://github.com/ras-24/laptop-marketplace-contract/blob/main/contracts/LaptopMarketplaceERC20.sol) to support payment with ERC-20 Token.
+   
+   I documented it in this [article](https://medium.com/@ras24/upgrade-laptop-marketplace-contract-with-erc-20-payment-e5c01c26451b).
+   
